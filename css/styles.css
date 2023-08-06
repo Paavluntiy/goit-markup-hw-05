@@ -733,53 +733,56 @@ color: var(--secondary-accent-color);
             transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
                 .modal-footer-input {
-                    width: 100%;
+                    width: 264px;
                     height: 40px;
-                    border: 1px solid var(--white-color);
-                    color: var(--white-color);
+                    font-size: 12px;
+                    line-height: 1.5;
+                    letter-spacing: 0.04em;
+                    border: 1px solid var(--primary-white-color);
+                    color: var(--primary-white-color);
                     border-radius: 4px;
-                    padding-left: 38px;
+                    padding-left: 16px;
+                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
                     background-color: transparent;
                     outline: transparent;
                     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
                         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
                 }
-                                .modal-footer-name {
-                                    color: var(--lightslate-color);
-                                    font-size: 12px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: 1.16;
-                                    letter-spacing: 0.02em;
-                                    margin-bottom: 4px;
-                                    display: inline-block;
-                                    
-                                }
+                .modal-footer-input::placeholder{
+                    color: var(--primary-white-color);
+                }
                                 .modal-footer-field{
                                     margin-left: 80px;
+                                    display: flex;
+                                    gap: 24px;
+
                                 }
                                 .footer-button{
-                                    display: block;
-                                    margin-left: 24px;
-                                        padding: 8px 24px;
-                                        justify-content: center;
-                                        align-items: center;
-                                        gap: 16px;
+                                    min-width: 165px;
+                                    height: 40px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-family: var(--primary-font);
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    line-height: 1.5;
+                                    letter-spacing: 0.04em;
+                                    color: var(--primary-white-color);
+                                    cursor: pointer;
+                                    background-color: var(--primary-blue-color);
+                                    border: none;
+                                    border-radius: 4px;
+                                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 
-                                        width: 169px;
-                                            height: 56px;
-                                            border-radius: 4px;
-                                            background-color: var(--primary-blue-color);
-                                            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-                                            color: var(--primary-white-color);
-                                            text-align: center;
-                                            border: none;
-                                            cursor: pointer;
-                                            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                                 }
                                         .footer-button:hover,
                                         .footer-button:focus{
                                             background-color: var(--secondary-accent-color);
+                                        }
+                                        .footer-button-svg{
+                                            margin-left: 16px;
+                                            fill: var(--primary-white-color);
                                         }
 
     /** ------------------MODAL WINDOW----------------- */
