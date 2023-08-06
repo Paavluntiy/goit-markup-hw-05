@@ -859,6 +859,9 @@ margin: 72px 24px 16px;
 .modal-check-field{
     margin-bottom: 24px;
 }
+.modal-comment-field{
+    margin-bottom: 16px;
+}
 .modal-comment::placeholder{
     color: var(--navyblue-modal);
         font-size: 12px;
